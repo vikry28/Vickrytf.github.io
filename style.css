@@ -1,0 +1,88 @@
+@import url('https://font.googleapis.com/css2?family=Quicksand:wght@300;400;500&display=swap');
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Quicksand', sans-serif;
+}
+body
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background:linear-gradient(#4d55c9, #ff078f);
+}
+.container
+{
+    position: relative;
+    backdrop-filter: blur(15px);
+    border: 5px 5px 30px rgba(0,0,0,0.2);
+    border-radius: 6px;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    border-left: rgba(255, 255, 255, 0.2);
+    background: rgba(255, 255, 255, 0.05);
+    z-index: 10;
+}
+.container .Kalkulator
+{
+   position: relative;
+   display: grid;
+}
+.container .Kalkulator .value
+{
+    height: 140px;
+    width: 290px;
+    grid-column: span 4;
+    text-align: right;
+    border: none;
+    outline: none;
+    padding: 10px;
+    font-size: 30px;
+    background: transparent;
+    color: #ffff;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    border-right: 1px solid rgba(255, 255, 255, 0.05);
+}
+.container .Kalkulator span
+{
+    display: grid;
+    height: 75px;
+    width: 75px;
+    font-weight: 400;
+    color: #ffff;
+    cursor: pointer;
+    font-size: 20px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    border-right: 1px solid rgba(255, 255, 255, 0.05);
+    user-select: none;
+    place-items: center;
+}
+.container .Kalkulator span:hover
+{
+    background: rgba(255, 255, 255, 0.05);
+    transition: 0%;
+}
+.container .Kalkulator span:active
+{
+    background: #ff078f;
+    color: #192f00;
+    font-size: 24px;
+    font-weight: 500;
+}
+.container .Kalkulator .hapus
+{
+    background: rgba(255, 255, 255, 0.05);
+    grid-column: span 2;
+    width: 150px;
+}
+.container .Kalkulator .tambah
+{
+    grid-row: span 2;
+    height: 150px;
+}
+.samadengan
+{
+    background: rgb;
+}
